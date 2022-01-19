@@ -1,0 +1,67 @@
+@import '../../../App.scss';
+main{
+    @include sitsGap;
+    @include pSize;
+    .top{
+        text-decoration: underline;
+        color: #333333;
+        font-size: 1.7vw;
+        font-weight: 900;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 4%;
+        margin-top: -6%;
+    }
+    .worldGoals{
+        padding-top: 3%;
+        // padding-bottom: 3%;
+        .articleMain1{
+            @include sectionGap;
+            @include italicHead;
+        }
+        .articleMain2{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 3%;
+            @include sectionGap;
+        }
+    }
+    .subGoals{
+        @include italicHead;
+        @include sectionGap;
+        h5{
+            @include sectionGap;
+            padding-top: 3%;
+            font-size: 2vw;
+            font-style: italic;
+    
+        }
+        .galleryMain{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 1%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .challenges{
+        @include italicHead;
+        @include sectionGap;
+        h4{
+            padding-top: 3%;
+        }
+        figure{
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            padding-bottom: 4%;
+            img{
+                width: 100%;
+            }
+            figcaption{
+                @include pSize;
+
+            }
+        }
+    }
+}
